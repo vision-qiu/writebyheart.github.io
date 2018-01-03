@@ -12,7 +12,7 @@
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Github Page搭建个人博客">
-<meta property="og:url" content="http://www.regularmisu.com/2018/01/02/搭建个人博客/index.html">
+<meta property="og:url" content="http://www.regularmisu.com/2018/01/02/set-up-personalBlog/index.html">
 <meta property="og:site_name" content="分享学习，人生随笔">
 <meta property="og:description" content="前言前两天刚刚搭建好这个博客，想着趁热乎，脑中还记得一些搭建时需要在意的注意点啥的。于是，便有了下文。虽说自己写的这篇教程，但是，好多部分是引用前辈们的，因为在我看他们的教程时，有些地方语言太过官方，太过专业话，想着能不能写个更加通俗易懂的。写的不好还望不要介意，只是希望能够给以后想自己搭建博客的人一点微不足道的帮助。有什么不对的地方可以留言告诉我。">
 <meta property="og:locale" content="zh-CN">
@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/first.png">
 <meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/repository1.png">
 <meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/repository2.png">
-<meta property="og:updated_time" content="2018-01-03T12:34:24.724Z">
+<meta property="og:updated_time" content="2018-01-03T12:42:22.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github Page搭建个人博客">
 <meta name="twitter:description" content="前言前两天刚刚搭建好这个博客，想着趁热乎，脑中还记得一些搭建时需要在意的注意点啥的。于是，便有了下文。虽说自己写的这篇教程，但是，好多部分是引用前辈们的，因为在我看他们的教程时，有些地方语言太过官方，太过专业话，想着能不能写个更加通俗易懂的。写的不好还望不要介意，只是希望能够给以后想自己搭建博客的人一点微不足道的帮助。有什么不对的地方可以留言告诉我。">
@@ -154,7 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-set-up-personalBlog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -166,7 +166,7 @@
   
 
         
-        <a href="/2018/01/02/搭建个人博客/" class="archive-article-date">
+        <a href="/2018/01/02/set-up-personalBlog/" class="archive-article-date">
   	<time datetime="2018-01-02T06:12:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
 </a>
         
@@ -215,8 +215,13 @@
 <p>上面两行也可简写为<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo g -d</span></span><br></pre></td></tr></table></figure></p>
 <p>到目前，博客已经算是搭建完成了，而且也已经发布到GitHub上，别人也可以访问得到了。在浏览器上访问<code>http:\\username.github.io</code>就能看到自己的博客了。</p>
 <blockquote>
-<p>tips：1.这边的username并非我的GitHub帐户名，我只是举个例子，你们将username改为你自己的GitHub帐户名即可<br>2.每次部署到GitHub上之后，可能要过一会儿才能显示最新的页面。即：输入完<code>hexo deploy</code>之后。建议一开始调试页面的时候在本地服务器上操作，可节省时间。</p>
+<p>tips：1.这边的username并非我的GitHub帐户名，我只是举个例子，你们将username改为你自己的GitHub帐户名即可<br>2.每次部署到GitHub上之后，可能要过一会儿才能显示最新的页面。即：输入完<code>hexo deploy</code>之后。建议一开始调试页面的时候在本地服务器上操作，可节省时间。  </p>
 </blockquote>
+<p><br></p>
+<blockquote>
+<p>提示：每次部署前最好先clean<br>步骤如下  </p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo generate</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo deploy</span></span><br></pre></td></tr></table></figure>
 <h2 id="两个配置文件及主题更改"><a href="#两个配置文件及主题更改" class="headerlink" title="两个配置文件及主题更改"></a><font color="#0099ff">两个配置文件及主题更改</font></h2><p>在本地博客目录下有两个配置文件，分别是</p>
 <ul>
 <li>E:\hexo_config.yml</li>
@@ -303,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://qr.liantu.com/api.php?text=http://www.regularmisu.com/2018/01/02/搭建个人博客/" alt="微信分享二维码">
+      <img src="http://qr.liantu.com/api.php?text=http://www.regularmisu.com/2018/01/02/set-up-personalBlog/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -461,11 +466,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
