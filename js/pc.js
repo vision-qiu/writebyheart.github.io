@@ -225,11 +225,11 @@ define([], function(){
         var titleTime;
         document.addEventListener("visibilitychange", function() {
             if (document.hidden) {
-                document.title = "(つェ⊂) " + originTitle;
+                document.title = originTitle;
                 clearTimeout(titleTime);
             }
             else {
-                document.title = "(*´∇｀*) " + originTitle;
+                document.title = originTitle;
                 titleTime = setTimeout(function() {
                     document.title = originTitle;
                 }, 2000);

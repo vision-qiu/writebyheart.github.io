@@ -176,7 +176,13 @@ require([], function (){
             });
         });
     }
-
+    
+    // about me 转义
+	var $aboutme = document.querySelector('#js-aboutme')
+	if ($aboutme && $aboutme.length !== 0) {
+		$aboutme.innerHTML = $aboutme.innerText
+	}
+    
     // text-block
     $(document).ready(function() {
         var highlight = {
