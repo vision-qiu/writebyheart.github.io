@@ -3,16 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[javaUpcast]]></title>
-      <url>/2018/01/12/javaUpcast/</url>
-      <content type="html"><![CDATA[<h2 id="向上转型"><a href="#向上转型" class="headerlink" title="向上转型"></a>向上转型</h2><h3 id="方法调用绑定"><a href="#方法调用绑定" class="headerlink" title="方法调用绑定"></a>方法调用绑定</h3><p>父类的引用指向子类的对象<br>同时丢失与父类不同的方法<br>对象的类型(引用的类型)是父类的类型<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Father f</span> = new Son();</span><br></pre></td></tr></table></figure></p>
-<p>可理解为，创建一个Son类型的对象向上转型为父类型Father类型<br>此时<code>引用f</code>所调用的方法若在子类中有重写，则调用子类的方法</p>
-]]></content>
-      
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[现在的我，左手写代码，右手写诗]]></title>
       <url>/2018/01/11/%E7%8E%B0%E5%9C%A8%E7%9A%84%E6%88%91%EF%BC%8C%E5%B7%A6%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%8F%B3%E6%89%8B%E5%86%99%E8%AF%97/</url>
       <content type="html"><![CDATA[<p>现在的我，左手写代码，右手写诗</p>
