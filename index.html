@@ -125,7 +125,7 @@
         </hgroup>
 
         
-        <p class="header-subtitle">我不介意孤独久一点，我只是不想变得微不足道</p>
+        <p class="header-subtitle">没有付出行动的梦想都是妄想</p>
         
 
         
@@ -208,7 +208,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jpa/">jpa</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-boot/">spring-boot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/异常/">异常</a></li></ul>
                     </div>
                 </section>
                 
@@ -250,7 +250,7 @@
               <h1 class="header-author"><a href="/" title="回到主页">DouDo</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">我不介意孤独久一点，我只是不想变得微不足道</p>
+            <p class="header-subtitle">没有付出行动的梦想都是妄想</p>
             
             <nav class="header-menu">
                 <ul>
@@ -277,6 +277,98 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/" class="article-date">
+      <time datetime="2018-02-01T06:37:32.000Z" itemprop="datePublished">2018-02-01</time>
+</a>
+
+ 
+    <a href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/"></span>
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/">spring-data-jpa双向表关联查询时引发异常：java.lang.StackOverflowError: null</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+          
+              <blockquote>
+<p>工作时不忘学习，学习时不忘记笔记。  </p>
+</blockquote>
+<h3 id="项目异常如下："><a href="#项目异常如下：" class="headerlink" title="项目异常如下："></a>项目异常如下：</h3><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2018</span>-<span class="number">01</span>-<span class="number">26</span> <span class="number">17</span>:<span class="number">12</span>:<span class="number">38.162</span>  WARN <span class="number">3128</span> --- [<span class="function"><span class="title">nio</span>-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to write HTTP message: org.springframework.http.converter.HttpMessageNotWritableException: Could <span class="built_in">not</span> write JSON: Infinite recursion (StackOverflowError); nested exception <span class="keyword">is</span> com.fasterxml.jackson.databind.JsonMappingException: Infinite recursion (StackOverflowError) (through reference chain: demo.server.core.domain.User["userAddresses"]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">org</span>.hibernate.collection.internal.PersistentBag[0]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">demo</span>.server.core.domain.UserAddress["user"]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">demo</span>.server.core.domain.User["userAddresses"]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">org</span>.hibernate.collection.internal.PersistentBag[0]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">demo</span>.server.core.domain.UserAddress["user"]-&gt;</span></span><br><span class="line">......<span class="comment">//无限递归</span></span><br></pre></td></tr></table></figure>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Note/">Note</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jpa/">jpa</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-boot/">spring-boot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/异常/">异常</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+    <style>
+        #post-blog-building .article-tag {
+            display: none;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-现在的我，左手写代码，右手写诗" class="article article-type-post" itemscope itemprop="blogPost">
   
