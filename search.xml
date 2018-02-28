@@ -13,6 +13,7 @@
 <li>Thymeleaf模板引擎渲染web视图，可完全替代JSP，使用Thymeleaf的主要目标在于提供一种可被浏览器正确显示的、格式良好的模板创建方式，（即创建 .html文件可被浏览器直接浏览）因此也可以用作静态建模。</li>
 <li>spring-data-jpa可简化数据访问，减少大量sql语句，尤其是基本的增删改查</li>
 </ul>
+<a id="more"></a>
 <blockquote>
 <p>搭建环境：eclipse、java 1.8.0_111 、spring boot 1.5.10</p>
 </blockquote>
