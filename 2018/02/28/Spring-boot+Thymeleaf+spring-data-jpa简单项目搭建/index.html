@@ -17,22 +17,26 @@
 <meta name="google" value="notranslate">
 
 
-     
-        <meta name="baidu-site-verification" content="ai9YVe01DX" />
-    
-     
-        <meta name="google-site-verification" content="VR0pjVypb6rfBUkK2IJnVqqEXeB9-jZzXpZDiWa6Q18" />
-    
 
-
+<meta name="description" content="笔记整理   Spring Boot搭建简单项目，容易上手，无需手动配置繁杂的xml文件,copy大量的重复配置代码。 Thymeleaf模板引擎渲染web视图，可完全替代JSP，使用Thymeleaf的主要目标在于提供一种可被浏览器正确显示的、格式良好的模板创建方式，（即创建 .html文件可被浏览器直接浏览）因此也可以用作静态建模。 spring-data-jpa可简化数据访问，减少大量sq">
 <meta name="keywords" content="后端，java，spring-boot，js，javascript，开发者，程序员，程序猿，编程，代码，开源，Developer,programmer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="左手写代码，右手写诗">
-<meta property="og:url" content="http://www.regularmisu.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring boot+Thymeleaf+spring-data-jpa简单项目搭建">
+<meta property="og:url" content="http://www.regularmisu.com/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/index.html">
 <meta property="og:site_name" content="左手写代码，右手写诗">
+<meta property="og:description" content="笔记整理   Spring Boot搭建简单项目，容易上手，无需手动配置繁杂的xml文件,copy大量的重复配置代码。 Thymeleaf模板引擎渲染web视图，可完全替代JSP，使用Thymeleaf的主要目标在于提供一种可被浏览器正确显示的、格式良好的模板创建方式，（即创建 .html文件可被浏览器直接浏览）因此也可以用作静态建模。 spring-data-jpa可简化数据访问，减少大量sq">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/180228/1.png">
+<meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/180228/2.png">
+<meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/180228/3.png">
+<meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/180228/4.png">
+<meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/180228/6.png">
+<meta property="og:image" content="http://www.regularmisu.com/assets/blogImg/180228/5.png">
+<meta property="og:updated_time" content="2018-02-28T09:19:54.724Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="左手写代码，右手写诗">
+<meta name="twitter:title" content="Spring boot+Thymeleaf+spring-data-jpa简单项目搭建">
+<meta name="twitter:description" content="笔记整理   Spring Boot搭建简单项目，容易上手，无需手动配置繁杂的xml文件,copy大量的重复配置代码。 Thymeleaf模板引擎渲染web视图，可完全替代JSP，使用Thymeleaf的主要目标在于提供一种可被浏览器正确显示的、格式良好的模板创建方式，（即创建 .html文件可被浏览器直接浏览）因此也可以用作静态建模。 spring-data-jpa可简化数据访问，减少大量sq">
+<meta name="twitter:image" content="http://www.regularmisu.com/assets/blogImg/180228/1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -60,13 +64,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>左手写代码，右手写诗</title>
+<title>Spring boot+Thymeleaf+spring-data-jpa简单项目搭建 | 左手写代码，右手写诗</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -75,8 +77,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -280,9 +282,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/" class="article-date">
@@ -309,12 +309,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/">Spring boot+Thymeleaf+spring-data-jpa简单项目搭建</a>
+    <h1 class="article-title" itemprop="name">
+      Spring boot+Thymeleaf+spring-data-jpa简单项目搭建
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -386,482 +393,185 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-    <style>
-        #post-blog-building .article-tag {
-            display: none;
-        }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-spring-data-jpa常用注解" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/24/spring-data-jpa常用注解/" class="article-date">
-      <time datetime="2018-02-24T05:45:19.000Z" itemprop="datePublished">2018-02-24</time>
-</a>
-
- 
-    <a href="/2018/02/24/spring-data-jpa常用注解/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/">Spring boot+Thymeleaf+spring-data-jpa简单项目搭建</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 DouDo 的个人博客">DouDo</a></p>
+        <p><span>发布时间:</span>2018-02-28, 17:11</p>
+        <p><span>最后更新:</span>2018-02-28, 17:19</p>
+        <!--
         
+            <p>
+                <span>更新历史:</span><i class="fa fa-github"></i>
+                <a href="https://github.com/writebyheart/Markdown-Archives-Backup/blame/master/_posts/2018-02-28.Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
+                <a href="https://github.com/writebyheart/Markdown-Archives-Backup/commits/master/_posts/2018-02-28.Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/writebyheart/Markdown-Archives-Backup/master/_posts/2018-02-28.Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+            </p>
         
-            <span class="disqus-comment-count" data-disqus-identifier="2018/02/24/spring-data-jpa常用注解/"></span>
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/24/spring-data-jpa常用注解/">spring-data-jpa常用注解</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-          
-              <p>记录一些spring-data-jpa常用的注解,代码运行环境：spring boot + spring-data-jpa</p>
-<h2 id="1-Entity"><a href="#1-Entity" class="headerlink" title="1. @Entity"></a>1. @Entity</h2><figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">被Entity标注的实体类将会被JPA管理控制，在程序运行时，JPA会识别并映射到指定的数据库表</span><br><span class="line">唯一参数<span class="built_in">name</span>:指定实体类名称，默认为当前实体类的非限定名称。</span><br><span class="line">若给了<span class="built_in">name</span>属性值即@Entity(<span class="built_in">name</span>=<span class="string">"XXX"</span>)，则jpa在仓储层(数据层)进行自定义查询时，所查的表名应是XXX。</span><br><span class="line">如：<span class="built_in">select</span> s <span class="keyword">from</span> XXX s</span><br></pre></td></tr></table></figure>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Note/">Note</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jpa/">jpa</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/注解/">注解</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2018/02/24/spring-data-jpa常用注解/#more">more >></a>
+        <p>-->
+            <span>原始链接:</span><a class="post-url" href="/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/" title="Spring boot+Thymeleaf+spring-data-jpa简单项目搭建">http://www.regularmisu.com/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.regularmisu.com/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/　　作者: DouDo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-    <style>
-        #post-blog-building .article-tag {
-            display: none;
-        }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/" class="article-date">
-      <time datetime="2018-02-01T06:37:32.000Z" itemprop="datePublished">2018-02-01</time>
-</a>
-
- 
-    <a href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-        
-            <span class="disqus-comment-count" data-disqus-identifier="2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/"></span>
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/">spring-data-jpa双向表关联查询时引发异常：java.lang.StackOverflowError: null</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-          
-              <blockquote>
-<p>工作时不忘学习，学习时不忘记笔记。  </p>
-</blockquote>
-<h3 id="项目异常如下："><a href="#项目异常如下：" class="headerlink" title="项目异常如下："></a>项目异常如下：</h3><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2018</span>-<span class="number">01</span>-<span class="number">26</span> <span class="number">17</span>:<span class="number">12</span>:<span class="number">38.162</span>  WARN <span class="number">3128</span> --- [<span class="function"><span class="title">nio</span>-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to write HTTP message: org.springframework.http.converter.HttpMessageNotWritableException: Could <span class="built_in">not</span> write JSON: Infinite recursion (StackOverflowError); nested exception <span class="keyword">is</span> com.fasterxml.jackson.databind.JsonMappingException: Infinite recursion (StackOverflowError) (through reference chain: demo.server.core.domain.User["userAddresses"]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">org</span>.hibernate.collection.internal.PersistentBag[0]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">demo</span>.server.core.domain.UserAddress["user"]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">demo</span>.server.core.domain.User["userAddresses"]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">org</span>.hibernate.collection.internal.PersistentBag[0]-&gt;</span></span><br><span class="line"><span class="function"><span class="title">demo</span>.server.core.domain.UserAddress["user"]-&gt;</span></span><br><span class="line">......<span class="comment">//无限递归</span></span><br></pre></td></tr></table></figure>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Note/">Note</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jpa/">jpa</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-boot/">spring-boot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/异常/">异常</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/#more">more >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
+
     
-  </div>
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/02/24/spring-data-jpa常用注解/">
+                    spring-data-jpa常用注解
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
 
 
+
+
+
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、创建项目"><span class="toc-number">1.</span> <span class="toc-text">一、创建项目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1"><span class="toc-number">1.1.</span> <span class="toc-text">1.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2"><span class="toc-number">1.2.</span> <span class="toc-text">2.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-配置application-properties文件"><span class="toc-number">1.3.</span> <span class="toc-text">3.配置application.properties文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-基本配置："><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 基本配置：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-其他配置"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 其他配置</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#3-2-1-模板引擎配置"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">3.2.1 模板引擎配置</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-2-2-Jpa主要配置"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">3.2.2 Jpa主要配置</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、项目启动运行"><span class="toc-number">2.</span> <span class="toc-text">二、项目启动运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、-MVC模式下项目搭建"><span class="toc-number">3.</span> <span class="toc-text">三、 MVC模式下项目搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-model类"><span class="toc-number">3.1.</span> <span class="toc-text">1. model类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-数据访问接口-仓储层"><span class="toc-number">3.2.</span> <span class="toc-text">2.数据访问接口(仓储层)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Controller-控制层"><span class="toc-number">3.3.</span> <span class="toc-text">3.Controller(控制层)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-Controller基础注解"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.1 Controller基础注解</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-Controller简单代码编写"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.2 Controller简单代码编写</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-视图层"><span class="toc-number">3.4.</span> <span class="toc-text">4. 视图层</span></a></li></ol></li></ol>
+        
+    </div>
     <style>
-        #post-blog-building .article-tag {
+        .left-col .switch-btn,
+        .left-col .switch-area {
             display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
         }
     </style>
 
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
 
 
 
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-现在的我，左手写代码，右手写诗" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/01/11/现在的我，左手写代码，右手写诗/" class="article-date">
-      <time datetime="2018-01-11T15:44:31.000Z" itemprop="datePublished">2018-01-11</time>
-</a>
-
- 
-    <a href="/2018/01/11/现在的我，左手写代码，右手写诗/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-        
-            <span class="disqus-comment-count" data-disqus-identifier="2018/01/11/现在的我，左手写代码，右手写诗/"></span>
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/11/现在的我，左手写代码，右手写诗/">现在的我，左手写代码，右手写诗</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-          
-              <p>现在的我，左手写代码，右手写诗</p>
-<p>已经分不清是日子变了还是人变了，<br>也许是日子变了，<br>以前，总是倒头就睡，一觉睡到自然醒，<br>现在，为了养成一个好的生活习惯，设置了两个闹钟，一个提示起床，一个提示早点睡觉。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Essay/">Essay</a>
+    <div class="share">
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Spring boot+Thymeleaf+spring-data-jpa简单项目搭建　| 左手写代码，右手写诗　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     </div>
 
 
-      
-      
-        <p class="article-more-link">
-          <a  href="/2018/01/11/现在的我，左手写代码，右手写诗/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
+
+
     
-  </div>
-  
-</article>
-
-
-    <style>
-        #post-blog-building .article-tag {
-            display: none;
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = 'http://www.regularmisu.com/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/';
+            this.page.identifier = '2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/';
+        };
+        var loadComment = function() {
+            var d = document, s = d.createElement('script');
+            s.src = '//doudo-1.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
         }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-set-up-personalBlog" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/01/02/set-up-personalBlog/" class="article-date">
-      <time datetime="2018-01-02T06:12:31.000Z" itemprop="datePublished">2018-01-02</time>
-</a>
-
- 
-    <a href="/2018/01/02/set-up-personalBlog/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-        
-            <span class="disqus-comment-count" data-disqus-identifier="2018/01/02/set-up-personalBlog/"></span>
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
+    </script>
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/02/set-up-personalBlog/">Hexo+Github Page搭建个人博客</a>
-    </h1>
-  
+    <aside class="comment-bar">
+        <a href="javascript:void(0);">
+            <i class="fa fa-commenting-o animated infinite pulse"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <span class="count-comment"></span>
+        </a>
+    </aside>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-          
-              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前两天刚刚搭建好这个博客，想着趁热乎，脑中还记得一些搭建时需要在意的注意点啥的。于是，便有了下文。只是希望能够给以后想自己搭建博客的人一点微不足道的帮助。有什么不对的地方可以留言告诉我。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Note/">Note</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2018/01/02/set-up-personalBlog/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-    <style>
-        #post-blog-building .article-tag {
-            display: none;
+    <script>
+        var $commentBar = $("#comments aside.comment-bar");
+        var load$hide = function(){
+            $commentBar.find("a > i").toggle();
+            loadComment();
+            $commentBar.fadeOut(800);
         }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-开幕" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/12/29/开幕/" class="article-date">
-      <time datetime="2017-12-29T08:33:13.000Z" itemprop="datePublished">2017-12-29</time>
-</a>
-
- 
-    <a href="/2017/12/29/开幕/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-        
-            <span class="disqus-comment-count" data-disqus-identifier="2017/12/29/开幕/"></span>
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/29/开幕/">开幕</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-          
-              <p>在朋友<a href="https://github.com/buyongfeng521" target="_blank" rel="noopener">buyongfeng</a>（下文中的大哥）的推荐和帮助下，折腾了一天多终于算是搭建好了。以后或许可能会换Theme，又或者懒得动自己选择性的优化一下页面吧。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Essay/">Essay</a>
-    </div>
-
-
-      
-      
-        <p class="article-more-link">
-          <a  href="/2017/12/29/开幕/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-    <style>
-        #post-blog-building .article-tag {
-            display: none;
+        $commentBar.click(function(){
+            load$hide();
+        })
+        $commentBar.children("a").hover(function(){
+            load$hide();
+        })
+        if (window.location.hash === "#comments") {
+            load$hide();
         }
-    </style>
+    </script>
+
+</section>
+
+
+<script id="dsq-count-scr" src="//doudo-1.disqus.com/count.js" async></script>
+<span class="disqus-comment-count" data-disqus-identifier="2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/"></span>
+<span class="disqus-comment-count" data-disqus-url="http://www.regularmisu.com/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/"></span>
+<script>
+    $(".disqus-comment-count").hide();
+    var $disqusCount = $(".disqus-comment-count");
+    $disqusCount.bind("DOMNodeInserted", function(e) {
+        $(".count-comment").text(
+            $(this).text().replace(/[^0-9]/ig,"")
+        )
+        DISQUSWIDGETS.getCount({reset: true});
+    })
+</script>
+
+    
 
 
 
 
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/02/24/spring-data-jpa常用注解/" title="下一篇: spring-data-jpa常用注解">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/28/Spring-boot+Thymeleaf+spring-data-jpa简单项目搭建/">Spring boot+Thymeleaf+spring-data-jpa简单项目搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/24/spring-data-jpa常用注解/">spring-data-jpa常用注解</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/01/spring-data-jpa双向表关联查询时引发异常：java-lang-StackOverflowError-null/">spring-data-jpa双向表关联查询时引发异常：java.lang.StackOverflowError: null</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/11/现在的我，左手写代码，右手写诗/">现在的我，左手写代码，右手写诗</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/02/set-up-personalBlog/">Hexo+Github Page搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/29/开幕/">开幕</a></li></ul>
 
 
 
 
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -917,26 +627,6 @@
         })
     </script>
 
-
-    
-
-    
-        <script id="dsq-count-scr" src="//doudo-1.disqus.com/count.js" async></script>
-        <script>
-            if ($(".left-col").is(":visible")) {
-                var $disqusCount = $(".disqus-comment-count");
-                $disqusCount.bind("DOMNodeInserted", function(e) {
-                    var num = $(this).text().replace(/[^0-9]/ig,"");
-                    if (num > 0) {
-                        $(this).siblings(".count-comment").text(num);
-                    }
-                    $(this).remove();
-                })
-            } else {
-                $(".disqus-comment-count").remove();
-            }
-        </script>
-     
 
 
 
