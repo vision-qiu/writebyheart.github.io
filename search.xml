@@ -69,6 +69,24 @@
 <p>与此同时，数据库中也插入了相应数据：<br><img src="/assets/blogImg/180228/5.png" alt="数据库表相应的数据"></p>
 ]]></content>
       
+        <categories>
+            
+            <category> Note </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> spring boot </tag>
+            
+            <tag> Jpa </tag>
+            
+            <tag> Thymeleaf </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
         
     </entry>
     
@@ -212,9 +230,9 @@
         
         <tags>
             
-            <tag> jpa </tag>
-            
             <tag> 异常 </tag>
+            
+            <tag> jpa </tag>
             
             <tag> Java </tag>
             
