@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="左手写代码，右手写诗">
 <meta property="og:description" content="记录一些spring-data-jpa常用的注解,代码运行环境：spring boot + spring-data-jpa @Entity1234被Entity标注的实体类将会被JPA管理控制，在程序运行时，JPA会识别并映射到指定的数据库表唯一参数name:指定实体类名称，默认为当前实体类的非限定名称。若给了name属性值即@Entity(name=&quot;XXX&quot;)，则jpa在仓储层(数据层)进行自">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-02-28T09:47:27.205Z">
+<meta property="og:updated_time" content="2018-03-06T02:10:14.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring-data-jpa常用注解">
 <meta name="twitter:description" content="记录一些spring-data-jpa常用的注解,代码运行环境：spring boot + spring-data-jpa @Entity1234被Entity标注的实体类将会被JPA管理控制，在程序运行时，JPA会识别并映射到指定的数据库表唯一参数name:指定实体类名称，默认为当前实体类的非限定名称。若给了name属性值即@Entity(name=&quot;XXX&quot;)，则jpa在仓储层(数据层)进行自">
@@ -434,6 +434,7 @@
 <blockquote>
 <p>所有双向关联使用时需谨慎，查询时容易引起栈内存溢出，尽量使用单向关联</p>
 </blockquote>
+<h2 id="Enumerated"><a href="#Enumerated" class="headerlink" title="@Enumerated"></a>@Enumerated</h2><p>当实体类中有枚举类型的属性时，默认情况下自动生成的数据库表中对应的字段类型是枚举的索引值，是数字类型的，若希望数据库中存储的是枚举对应的String类型，在属性上加入<code>@Enumerated(EnumType.STRING)</code>注解即可。<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@Enumerated</span>(EnumType.STRING)</span><br><span class="line"><span class="variable">@Column</span>(nullable = true)</span><br><span class="line">private RoleEnum role;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -445,7 +446,7 @@
         <p><span>本文标题:</span><a href="/2018/02/24/spring-data-jpa常用注解/">spring-data-jpa常用注解</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 DouDo 的个人博客">DouDo</a></p>
         <p><span>发布时间:</span>2018-02-24, 13:45</p>
-        <p><span>最后更新:</span>2018-02-28, 17:47</p>
+        <p><span>最后更新:</span>2018-03-06, 10:10</p>
         <!--
         
             <p>
@@ -494,7 +495,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Entity"><span class="toc-number">1.</span> <span class="toc-text">@Entity</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Table"><span class="toc-number">2.</span> <span class="toc-text">@Table</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Id"><span class="toc-number">3.</span> <span class="toc-text">@Id</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GeneratedValue"><span class="toc-number">4.</span> <span class="toc-text">@GeneratedValue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic"><span class="toc-number">5.</span> <span class="toc-text">@Basic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Column"><span class="toc-number">6.</span> <span class="toc-text">@Column</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transient"><span class="toc-number">7.</span> <span class="toc-text">@Transient</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Temporal"><span class="toc-number">8.</span> <span class="toc-text">@Temporal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Embedded-和-Embeddable"><span class="toc-number">9.</span> <span class="toc-text">@Embedded 和 @Embeddable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JoinColumn"><span class="toc-number">10.</span> <span class="toc-text">@JoinColumn</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OneToOne"><span class="toc-number">11.</span> <span class="toc-text">@OneToOne</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ManyToOne、-OneToMany"><span class="toc-number">12.</span> <span class="toc-text">@ManyToOne、@OneToMany</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ManyToMany"><span class="toc-number">13.</span> <span class="toc-text">@ManyToMany</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Entity"><span class="toc-number">1.</span> <span class="toc-text">@Entity</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Table"><span class="toc-number">2.</span> <span class="toc-text">@Table</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Id"><span class="toc-number">3.</span> <span class="toc-text">@Id</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GeneratedValue"><span class="toc-number">4.</span> <span class="toc-text">@GeneratedValue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic"><span class="toc-number">5.</span> <span class="toc-text">@Basic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Column"><span class="toc-number">6.</span> <span class="toc-text">@Column</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transient"><span class="toc-number">7.</span> <span class="toc-text">@Transient</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Temporal"><span class="toc-number">8.</span> <span class="toc-text">@Temporal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Embedded-和-Embeddable"><span class="toc-number">9.</span> <span class="toc-text">@Embedded 和 @Embeddable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JoinColumn"><span class="toc-number">10.</span> <span class="toc-text">@JoinColumn</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OneToOne"><span class="toc-number">11.</span> <span class="toc-text">@OneToOne</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ManyToOne、-OneToMany"><span class="toc-number">12.</span> <span class="toc-text">@ManyToOne、@OneToMany</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ManyToMany"><span class="toc-number">13.</span> <span class="toc-text">@ManyToMany</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Enumerated"><span class="toc-number">14.</span> <span class="toc-text">@Enumerated</span></a></li></ol>
         
     </div>
     <style>

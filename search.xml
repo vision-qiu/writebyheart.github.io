@@ -198,6 +198,7 @@
 <blockquote>
 <p>所有双向关联使用时需谨慎，查询时容易引起栈内存溢出，尽量使用单向关联</p>
 </blockquote>
+<h2 id="Enumerated"><a href="#Enumerated" class="headerlink" title="@Enumerated"></a>@Enumerated</h2><p>当实体类中有枚举类型的属性时，默认情况下自动生成的数据库表中对应的字段类型是枚举的索引值，是数字类型的，若希望数据库中存储的是枚举对应的String类型，在属性上加入<code>@Enumerated(EnumType.STRING)</code>注解即可。<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@Enumerated</span>(EnumType.STRING)</span><br><span class="line"><span class="variable">@Column</span>(nullable = true)</span><br><span class="line">private RoleEnum role;</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       
         <categories>
