@@ -14,7 +14,7 @@
 6. commit 代码到本地仓库
 7. push 代码到远程资源库
 </code></pre><a id="more"></a>
-<p>我将工作流程简单的绘制成一幅图，由图可清晰看出以一系列的操作步骤<br><img src="http://img.blog.csdn.net/20180306131631567?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTXJfRG91RG8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="git基本操作"></p>
+<p>我将工作流程简单的绘制成一幅图，由图可清晰看出以一系列的操作步骤<br><img src="/assets/blogImg/180306/git基本操作.png" alt="git基本操作"></p>
 <h2 id="二、git常用命令"><a href="#二、git常用命令" class="headerlink" title="二、git常用命令"></a>二、git常用命令</h2><h5 id="1-从远端拉取并合并代码到本地仓库"><a href="#1-从远端拉取并合并代码到本地仓库" class="headerlink" title="1.从远端拉取并合并代码到本地仓库"></a>1.从远端拉取并合并代码到本地仓库</h5><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
 <h5 id="2-将修改过的代码生成快照添加到暂存区"><a href="#2-将修改过的代码生成快照添加到暂存区" class="headerlink" title="2.将修改过的代码生成快照添加到暂存区"></a>2.将修改过的代码生成快照添加到暂存区</h5><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> * 或 &lt;filename&gt;</span></span><br></pre></td></tr></table></figure>
 <h5 id="3-将代码提交到本地仓库"><a href="#3-将代码提交到本地仓库" class="headerlink" title="3.将代码提交到本地仓库"></a>3.将代码提交到本地仓库</h5><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"..."</span> <span class="comment">//双引号内为：注释，代码修改信息摘要</span></span><br></pre></td></tr></table></figure>
@@ -326,9 +326,9 @@
         
         <tags>
             
-            <tag> 异常 </tag>
-            
             <tag> jpa </tag>
+            
+            <tag> 异常 </tag>
             
             <tag> Java </tag>
             
