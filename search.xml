@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[git基本使用]]></title>
       <url>/2018/03/06/git%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-      <content type="html"><![CDATA[<h2 id="一、git工作流程"><a href="#一、git工作流程" class="headerlink" title="一、git工作流程"></a>一、git工作流程</h2><p>工作流程：</p>
+      <content type="html"><![CDATA[<h4 id="一、git工作流程"><a href="#一、git工作流程" class="headerlink" title="一、git工作流程"></a>一、git工作流程</h4><p>工作流程：</p>
 <pre><code>1. 克隆远程资源库中项目代码到本地（本地会生成.git隐藏文件和项目代码，项目代码为工作区）
 2. 对工作区代码进行添加，修改，删除一系列编辑操作
 3. add 代码到暂存区（index）
@@ -15,7 +15,7 @@
 7. push 代码到远程资源库
 </code></pre><a id="more"></a>
 <p>我将工作流程简单的绘制成一幅图，由图可清晰看出以一系列的操作步骤<br><img src="/assets/blogImg/180306/git基本操作.png" alt="git基本操作"></p>
-<h2 id="二、git常用命令"><a href="#二、git常用命令" class="headerlink" title="二、git常用命令"></a>二、git常用命令</h2><h5 id="1-从远端拉取并合并代码到本地仓库"><a href="#1-从远端拉取并合并代码到本地仓库" class="headerlink" title="1.从远端拉取并合并代码到本地仓库"></a>1.从远端拉取并合并代码到本地仓库</h5><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
+<h4 id="二、git常用命令"><a href="#二、git常用命令" class="headerlink" title="二、git常用命令"></a>二、git常用命令</h4><h5 id="1-从远端拉取并合并代码到本地仓库"><a href="#1-从远端拉取并合并代码到本地仓库" class="headerlink" title="1.从远端拉取并合并代码到本地仓库"></a>1.从远端拉取并合并代码到本地仓库</h5><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
 <h5 id="2-将修改过的代码生成快照添加到暂存区"><a href="#2-将修改过的代码生成快照添加到暂存区" class="headerlink" title="2.将修改过的代码生成快照添加到暂存区"></a>2.将修改过的代码生成快照添加到暂存区</h5><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> * 或 &lt;filename&gt;</span></span><br></pre></td></tr></table></figure>
 <h5 id="3-将代码提交到本地仓库"><a href="#3-将代码提交到本地仓库" class="headerlink" title="3.将代码提交到本地仓库"></a>3.将代码提交到本地仓库</h5><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"..."</span> <span class="comment">//双引号内为：注释，代码修改信息摘要</span></span><br></pre></td></tr></table></figure>
 <h5 id="4-提交代码到远程资源库"><a href="#4-提交代码到远程资源库" class="headerlink" title="4.提交代码到远程资源库"></a>4.提交代码到远程资源库</h5><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin <span class="keyword">master</span> <span class="title">//master</span>可以换成其他分支名</span><br></pre></td></tr></table></figure>
@@ -57,7 +57,7 @@
 <figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">merge</span> branchname <span class="comment">// 将branchname分支合并到当前分支</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="三、异常"><a href="#三、异常" class="headerlink" title="三、异常"></a>三、异常</h2><p>出现以下异常：<br><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">remote: Counting objects: 86, done.</span><br><span class="line">remote: Compressing objects: 100% (82/82), done.</span><br><span class="line"><span class="keyword">error: </span>RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: early EOF</span><br><span class="line">fatal: unpack-objects failed</span><br></pre></td></tr></table></figure></p>
+<h4 id="三、异常"><a href="#三、异常" class="headerlink" title="三、异常"></a>三、异常</h4><p>出现以下异常：<br><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">remote: Counting objects: 86, done.</span><br><span class="line">remote: Compressing objects: 100% (82/82), done.</span><br><span class="line"><span class="keyword">error: </span>RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: early EOF</span><br><span class="line">fatal: unpack-objects failed</span><br></pre></td></tr></table></figure></p>
 <p>执行如下操作<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global http.postBuffer 524288000</span><br></pre></td></tr></table></figure></p>
 <p>执行之后可能需要过一会儿才可以恢复正常使用</p>
 ]]></content>
@@ -326,9 +326,9 @@
         
         <tags>
             
-            <tag> jpa </tag>
-            
             <tag> 异常 </tag>
+            
+            <tag> jpa </tag>
             
             <tag> Java </tag>
             
