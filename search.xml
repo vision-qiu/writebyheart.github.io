@@ -3,6 +3,38 @@
   
     
     <entry>
+      <title><![CDATA[javascript中 typeof 和 instanceof区别]]></title>
+      <url>/2018/03/15/javascript%E4%B8%AD-typeof-%E5%92%8C-instanceof%E5%8C%BA%E5%88%AB/</url>
+      <content type="html"><![CDATA[<h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof()"></a>typeof()</h3><p>用来获取一个变量或者表达式的类型，typeof返回如下几个结果：</p>
+<pre><code>number
+boolean
+string
+function（函数）
+object（NULL,数组，对象）
+undefined
+</code></pre><a id="more"></a>
+<p>例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">12</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(a));</span><br></pre></td></tr></table></figure></p>
+<p>显示结果为 <code>number</code></p>
+<h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3><p>常用来判断一个变量是否是某个对象的实例,返回结果是boolean值(<code>true</code> / <code>false</code>)<br>例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> student = <span class="keyword">new</span> People();</span><br><span class="line"><span class="built_in">console</span>.log(student <span class="keyword">instanceof</span> People);</span><br></pre></td></tr></table></figure></p>
+<p>返回结果为<code>true</code></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Note </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> js </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[git基本使用]]></title>
       <url>/2018/03/06/git%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="一、git工作流程"><a href="#一、git工作流程" class="headerlink" title="一、git工作流程"></a>一、git工作流程</h2><p>工作流程：</p>
@@ -309,9 +341,9 @@
         
         <tags>
             
-            <tag> jpa </tag>
-            
             <tag> 异常 </tag>
+            
+            <tag> jpa </tag>
             
             <tag> Java </tag>
             

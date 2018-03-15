@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.regularmisu.com/"/>
-  <updated>2018-03-06T06:44:08.760Z</updated>
+  <updated>2018-03-15T13:13:39.423Z</updated>
   <id>http://www.regularmisu.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript中 typeof 和 instanceof区别</title>
+    <link href="http://www.regularmisu.com/2018/03/15/javascript%E4%B8%AD-typeof-%E5%92%8C-instanceof%E5%8C%BA%E5%88%AB/"/>
+    <id>http://www.regularmisu.com/2018/03/15/javascript中-typeof-和-instanceof区别/</id>
+    <published>2018-03-15T13:08:03.000Z</published>
+    <updated>2018-03-15T13:13:39.423Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof()"></a>typeof()</h3><p>用来获取一个变量或者表达式的类型，typeof返回如下几个结果：</p><pre><code>numberbooleanstringfunction（函数）object（NULL,数组，对象）undefined</code></pre><a id="more"></a><p>例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">12</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(a));</span><br></pre></td></tr></table></figure></p><p>显示结果为 <code>number</code></p><h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3><p>常用来判断一个变量是否是某个对象的实例,返回结果是boolean值(<code>true</code> / <code>false</code>)<br>例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> student = <span class="keyword">new</span> People();</span><br><span class="line"><span class="built_in">console</span>.log(student <span class="keyword">instanceof</span> People);</span><br></pre></td></tr></table></figure></p><p>返回结果为<code>true</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;typeof&quot;&gt;&lt;a href=&quot;#typeof&quot; class=&quot;headerlink&quot; title=&quot;typeof()&quot;&gt;&lt;/a&gt;typeof()&lt;/h3&gt;&lt;p&gt;用来获取一个变量或者表达式的类型，typeof返回如下几个结果：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;number
+boolean
+string
+function（函数）
+object（NULL,数组，对象）
+undefined
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://www.regularmisu.com/categories/Note/"/>
+    
+    
+      <category term="js" scheme="http://www.regularmisu.com/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>git基本使用</title>
@@ -129,9 +158,9 @@
       <category term="Note" scheme="http://www.regularmisu.com/categories/Note/"/>
     
     
-      <category term="jpa" scheme="http://www.regularmisu.com/tags/jpa/"/>
-    
       <category term="异常" scheme="http://www.regularmisu.com/tags/%E5%BC%82%E5%B8%B8/"/>
+    
+      <category term="jpa" scheme="http://www.regularmisu.com/tags/jpa/"/>
     
       <category term="Java" scheme="http://www.regularmisu.com/tags/Java/"/>
     
