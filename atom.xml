@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.regularmisu.com/"/>
-  <updated>2018-03-15T16:15:49.013Z</updated>
+  <updated>2018-03-31T09:29:35.496Z</updated>
   <id>http://www.regularmisu.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10系统下使用telnet完成一次简单的HTTP请求</title>
+    <link href="http://www.regularmisu.com/2018/03/31/win10%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BD%BF%E7%94%A8telnet%E5%AE%8C%E6%88%90%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84HTTP%E8%AF%B7%E6%B1%82/"/>
+    <id>http://www.regularmisu.com/2018/03/31/win10系统下使用telnet完成一次简单的HTTP请求/</id>
+    <published>2018-03-31T09:28:17.000Z</published>
+    <updated>2018-03-31T09:29:35.496Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="开启telnet客户端（若已开启请忽略）"><a href="#开启telnet客户端（若已开启请忽略）" class="headerlink" title="开启telnet客户端（若已开启请忽略）"></a>开启telnet客户端（若已开启请忽略）</h1><p>win10系统下默认telnet客户端是关闭的，需要自己去开启，设置过程简单如下图</p><a id="more"></a><p><img src="https://img-blog.csdn.net/2018033117163170?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01yX0RvdURv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="win10打开telnet客户端"></p><h1 id="使用telnet进行简单的HTTP请求"><a href="#使用telnet进行简单的HTTP请求" class="headerlink" title="使用telnet进行简单的HTTP请求"></a>使用telnet进行简单的HTTP请求</h1><p>步骤如下：</p><ul><li>打开cmd,输入： telnet www.baidu.com 80<br>会跳转进入空白的命令行页面。</li><li>输入： <code>Ctrl</code> + <code>]</code>页面会显示<code>欢迎使用 Microsoft Telnet Client</code></li><li>再按一次回车(Enter)键</li><li>进入一个空白页，输入： GET / HTTP/1.0</li><li>按两次回车(Enter)键</li><li>最后返回一次HTTP完整的请求数据，包括请求头，和主体</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;开启telnet客户端（若已开启请忽略）&quot;&gt;&lt;a href=&quot;#开启telnet客户端（若已开启请忽略）&quot; class=&quot;headerlink&quot; title=&quot;开启telnet客户端（若已开启请忽略）&quot;&gt;&lt;/a&gt;开启telnet客户端（若已开启请忽略）&lt;/h1&gt;&lt;p&gt;win10系统下默认telnet客户端是关闭的，需要自己去开启，设置过程简单如下图&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://www.regularmisu.com/categories/Note/"/>
+    
+    
+      <category term="HTTP" scheme="http://www.regularmisu.com/tags/HTTP/"/>
+    
+  </entry>
   
   <entry>
     <title>你们都遇到过什么样的室友？</title>
